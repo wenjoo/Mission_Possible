@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --warm-bg: #fff7ef;
+  --warm-card: #ffffff;
+  --ink: #1a1410;
+  --accent: #e85d3c;
+  --accent-soft: #ff9a76;
+  --muted: #6b5c52;
+  --border: rgba(26, 20, 16, 0.08);
+}
+
+body {
+  color: var(--ink);
+  background: radial-gradient(
+      ellipse 120% 80% at 50% -20%,
+      rgba(255, 200, 160, 0.35) 0%,
+      transparent 55%
+    ),
+    var(--warm-bg);
+  min-height: 100dvh;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
